@@ -1,0 +1,995 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="IMG/logo.jpg">
+  <title>Learn Coding</title>
+ <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+ <style>
+*{ margin: 0;
+    padding: 0cm;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.main{background-image: url(IMG/bg.jpg);
+        height: 800px;
+        width: 100%;
+}
+#header{font-size: 35;
+         font-style:inherit;
+
+}
+#paragraph{font-size: 23;
+}
+
+#body1{background-color: rgba(231, 207, 219, 0.507);
+  width: cover;
+    height: 1500px;
+}
+#body2{background-color: rgba(231, 207, 219, 0.507);
+  width: cover;
+    height: 9910px;
+}
+#body3{background-color: rgba(231, 207, 219, 0.507);
+    width: cover;
+      height: 9200px;
+  }
+
+#main{width:500px; 
+    height: 350px;
+    font-style: oblique;
+    border-radius:35px ;
+    border-color: black;
+    padding: 25px;
+}
+#gallay{height: 200;
+        width: 400;
+        border-color: black;
+}
+#hovertext{font-size: 15;
+    padding: 0;
+    margin: 2;
+}
+#thumbnail{width: 600;
+           height: 300;
+
+}
+#sub{font-size: 17;
+     font-style: oblique;
+
+}
+#head{font-size: 40;
+
+}
+#tu{ font-size: 35;
+      }
+
+#button{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 14px;
+
+}
+
+.contact{background-image: url(IMG/Contact1.jpg);
+    width: 1400 ;
+    height: 700;
+    justify-content: center;
+    max-width: 100%;
+}
+    
+
+#style{
+    color: rgb(238, 230, 230);
+}
+#enrollnow1{background-color:rgba(255, 255, 255, 0.288);
+    color: rgb(253, 253, 253);
+    border-radius: 150px;
+    cursor: pointer;
+}
+#navigation{background: rgba(0, 0, 0, 0.7);
+            background-blend-mode: darken;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+            max-width: 100%;
+}
+#navigation1{background: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+#logo{width:50px; 
+    height: 50px;
+    font-style: oblique;
+    border-radius:50px ;
+}
+
+#stitle{background-color: rgba(237, 237, 241, 0.568);
+    color: black;
+    outline-style:outset;
+    font-size: 80;
+    font-style:unset;
+}
+#title{background-color: rgba(237, 237, 241, 0.568);
+    color: black;
+    outline-style:outset;
+    font-size: 50;
+    font-style:unset;
+}
+#subtitle{
+        background-color: rgba(237, 237, 241, 0.568);
+        color: black;
+        outline-style:outset;
+        font-size: 25;
+}
+#getstarted{
+         background-color: rgba(237, 237, 241, 0.568);
+        color: rgba(red, green, blue, alpha);
+        outline-style:outset;
+        font-size: 25;
+        cursor: pointer;
+}
+#enrollnow{background-color:rgba(255, 255, 255, 0.521);
+    color: rgb(0, 0, 0);
+    border-radius: 150px;
+    cursor: pointer;
+}
+#status{color: antiquewhite;
+cursor: pointer;
+padding: 5;
+}
+#status1{color: antiquewhite;
+    cursor: pointer;
+    padding: 5;
+    font-size: 18;
+    }
+#statusbar{color: antiquewhite;
+    cursor: pointer;
+}
+.slideshow{
+           width: 1000;
+           height: 400px;
+           position:absolute;
+           left:20%;
+           text-align: center;
+           transform: translate(-10%,-85%);
+           background-image: url(/Slideshow/pexels-pixabay-270348.jpg);
+           background-size: 100% 100%;
+           box-shadow: 1px 2px 10px 10px white;
+            align-items: center;
+            animation: slider 30s infinite linear;
+        
+              
+}
+@keyframes slider {
+    0%{ background-image: url(Slideshow/pexels-pixabay-270348.jpg);}
+    10%{ background-image: url(Slideshow/pexels-pixabay-270360.jpg);}
+    20%{ background-image: url(Slideshow/pexels-pixabay-270366.jpg);}
+    30%{ background-image: url(Slideshow/pexels-pixabay-270373.jpg);}
+    50%{ background-image: url(Slideshow/pexels-pixabay-276452.jpg);}
+    60%{ background-image: url(Slideshow/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg);}
+    70%{ background-image: url(Slideshow/pexels-pixabay-247791.jpg);}
+    80%{ background-image: url(Slideshow/pexels-pixabay-270488.jpg);}
+    40%{ background-image: url(Slideshow/pexels-pixabay-276452.jpg);}
+    90%{ background-image: url(Slideshow/pexels-digital-buggu-374563.jpg);}
+    
+}
+
+
+.slide{
+    background-color: rgba(27, 31, 34, 0.85);
+    width: cover;
+    height: 600px;
+}
+.hhh{
+     width: cover;
+     align-items: center;
+}
+
+.burger{position: absolute;
+  cursor: pointer;
+  right: 5px;
+  top: 15px;
+  display: none;
+}
+.line{
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 3px;
+}
+#footer{
+    background-color: rgba(27, 31, 34, 0.85);
+        background-blend-mode: darken;
+        cursor: pointer;
+        height: 100;
+}
+.ths{
+    height: 800px;
+    width: 100%;
+}
+#pic{
+    margin-top: 150;
+    margin-left: 180;
+    width: 1000;
+    height: 400px; 
+    position:absolute;
+    text-align: center;
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 10px white;
+    align-items: center;
+           
+}
+.dd{background-color: rgba(27, 31, 34, 0.85);
+    width: cover;
+    height: 100%;
+
+}
+ </style>
+
+</head>
+<body>
+    <div>
+  <div class="main">
+    <div id="navigation" >
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    <a href='index.html' onclick="topFunction()" id="button" title="Go to top" style="display: block;" id='intex'>Top</a>
+    <div class="h-nav">
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a href='index.html' class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <img src ='IMG\logo.jpg' id="logo" text='Logo'>
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+              <span class="ml-3 text-xl" id='statusbar'> Coding Platform </span>
+            </a>
+           
+            <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+              <a href='index.html'class="mr-5 hover:text-gray-900" id="status">Home</a>
+              <a href='about.html'class="mr-5 hover:text-gray-900"id="status">About us</a>
+              <a href='services.html'class="mr-5 hover:text-gray-900"id="status">Services</a>
+              <a href='Contact.html'class="mr-5 hover:text-gray-900"id="status">Contact us </a>
+            </nav>
+            <a href='https://www.w3schools.com/' class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" id="enrollnow">Enroll now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          
+          </div>
+          <hr class="div">
+        </header>
+      </div>
+    </div> 
+    <section >
+      
+      <br />
+    </font>
+  </h3>
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <h1 align="center">
+    <font face="alegrain" color="FAF7F7" size="100" id="Stitle">
+      Learn Coding
+    </font>
+  </h1>
+  <br />
+  <h3 align="center">
+    <font face="Lato" color="#010D14" size="5"  id="subtitle">
+      Because learning to code might be the easiest way to change your career.
+    </font>
+  </h3>
+  <br />
+  <h3 align="center" >
+        <font face="Lato" color="#000" size="10">
+        <a href='https://www.w3schools.com/' class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" id='getstarted'>Get Started
+    
+  </a>
+  </h3>
+  <br /><br /><br /><br /><br /><br />
+    </section>
+
+</div>
+    
+<hr>
+<section id='body1'>
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" id="header">The Future of Education is here
+          
+        </h1>
+        <p class="mb-8 leading-relaxed" id="paragraph">The Future of Education is coding. Because Coading can change the technology.Coding, in the simplest of terms, is telling a computer what you want it to do, which involves typing in step-by-step commands for the computer to follow. Coading can help you to achieve your goals in Computer Science. So, Start Learning from now.</p>
+        <div class="flex justify-center">
+  
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="coading" id='main' src="IMG/main.png">
+      </div>
+    </div>
+</section>
+
+<hr>
+<div class="gallary">
+<section class="text-gray-600 body-font">
+<div class="container px-5 py-24 mx-auto">
+  <div class="flex flex-col text-center w-full mb-20">
+    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" id='head'>It’s time to start investing in yourself</h1>
+    <p class="lg:w-2/3 mx-auto leading-relaxed text-base" id='sub'>"Any fool can write code that a computer can understand, </p>
+    <p class="lg:w-2/3 mx-auto leading-relaxed text-base" id='sub'> Good programmers write code that humans can understand.” </p>
+  </div>
+  <div class="flex flex-wrap -m-4">
+    <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <div class="flex relative">
+        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" id='gallay' src="IMG/Gallary6.jfif">
+        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+          <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">START COADING</h2>
+
+          <p class="leading-relaxed" id='hovertext'>All of my friends who have younger siblings who are going to college or high school - my number one piece of advice is: You should learn how to program.</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <div class="flex relative">
+        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" id='gallay' src="IMG/Gallary2.jfif">
+        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+          <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">START COADING</h2>
+
+          <p class="leading-relaxed" id='hovertext'>Coding is the language of the future, and every girl should learn it. As I've learned from watching girls grow and learn in our classrooms, coding is fun, collaborative and creative</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <div class="flex relative">
+        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" id='gallay' src="IMG/Gallary1.jfif">
+        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+          <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">START COADING</h2>
+
+          <p class="leading-relaxed" id='hovertext'>when you don't create things, you become defined by your tastes rather than ability. your tastes only narrow & exclude people. so create. Talk is cheap. Show me the code.</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <div class="flex relative">
+        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" id='gallay' src="IMG/Gallary3.jfif">
+        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+          <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">START COADING</h2>
+
+          <p class="leading-relaxed" id='hovertext'>Whether you want to uncover the secrets of the universe, or you just want to pursue a career in the 21st century, basic computer programming is an essential skill to learn.</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <div class="flex relative">
+        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" id='gallay' src="IMG/Gallary5.jfif">
+        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+          <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">START COADING</h2>
+
+          <p class="leading-relaxed" id='hovertext'>I taught myself how to program computers when I was a kid, bought my first computer when I was 10, and sold my first commercial program when I was 12.</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <div class="flex relative">
+        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" id='gallay' src="IMG/Gallary4.jfif">
+        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+          <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">START COADING</h2>
+
+          <p class="leading-relaxed" id='hovertext'>In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</div>
+<hr>
+    </div>
+</section>
+
+
+  
+<section class='hhh'>
+    <div class="slide">
+<br></br><br></br><br></br>
+<div class="slideshow">
+  <br></br>
+    <h1 align="center">
+        <font face="alegrain" color="FAF7F7" size="100" id="title">
+          Tutorials
+        </font>
+      </h1>
+    
+    </div>
+    </div>
+    </section>
+    
+    <section id='body2'>
+        <hr>
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"  id="header">HTML-The language for building web pages
+        <br class="hidden lg:inline-block" id='subheader'>
+      </h1>
+      <p class="mb-8 leading-relaxed" id="paragraph">The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages.</p>
+      <div class="flex justify-center">
+        <a href='https://www.w3schools.com/html/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" >Get Started ➔</a>
+        </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img class="object-cover object-center rounded" alt="hero" src="IMG/HTML.jfif">
+    </div>
+  </div>
+</section>
+<hr>
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <img class="object-cover object-center rounded" alt="hero" src="IMG/CSS.jfif">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"  id="header">CSS-The language for styling web pages        
+        <br class="hidden lg:inline-block">
+      </h1>
+      <p class="mb-8 leading-relaxed" id="paragraph">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.</p>
+      <div class="flex justify-center">
+        <a href='https://www.w3schools.com/css/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+        </div>
+    </div>
+  </div>
+</section>
+<hr>
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" id="header">JavaScript-The language for programming web pages        
+        <br class="hidden lg:inline-block">
+      </h1>
+      <p class="mb-8 leading-relaxed"id="paragraph">JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+      <div class="flex justify-center">
+        <a href='https://www.w3schools.com/js/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+        </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img class="object-cover object-center rounded" alt="hero" src="IMG/JAVASCRIPT.jfif">
+    </div>
+  </div>
+</section>
+<hr>
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <img class="object-cover object-center rounded" alt="hero"  id='thumbnail' src="IMG/PHYTHON.jfif">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" id="header">Python-A popular programming language
+        <br class="hidden lg:inline-block">
+      </h1>
+      <p class="mb-8 leading-relaxed"id="paragraph">Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects</p>
+      <div class="flex justify-center">
+        <a href='https://www.w3schools.com/python/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+        </div>
+    </div>
+  </div>
+</section>
+<hr>
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" id="header">SQL-A language for accessing databases
+        <br class="hidden lg:inline-block">
+      </h1>
+      <p class="mb-8 leading-relaxed"id="paragraph">SQL stands for Structured Query Language. It is designed for managing data in a relational database management system (RDBMS). It is pronounced as S-Q-L or sometime See-Qwell. SQL is a database language, it is used for database creation, deletion, fetching rows, and modifying rows, etc</p>
+      <div class="flex justify-center">
+        <a href='https://www.w3schools.com/sql/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+     </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img class="object-cover object-center rounded" alt="hero" id='thumbnail' src="IMG/SQL.jfif">
+    </div>
+  </div>
+  <hr>
+  </section>
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero"  id='thumbnail' src="IMG/PHP.jpg">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" id="header">PHP-A web server programming language
+          <br class="hidden lg:inline-block">
+        </h1>
+        <p class="mb-8 leading-relaxed"id="paragraph">PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages. PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP. PHP 7 is the latest stable release.</p>
+        <div class="flex justify-center">
+          <a href='https://www.w3schools.com/php/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+          </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" id="header">jQuery-A JS for developing web pages
+          <br class="hidden lg:inline-block">
+        </h1>
+        <p class="mb-8 leading-relaxed"id="paragraph">Broadly, query languages can be classified according to whether they are database query languages or information retrieval query languages. The difference is that a database query language attempts to give factual answers to factual questions, while an information retrieval query language attempts to find documents containing information that is relevant to an area of inquiry.</p>
+        <div class="flex justify-center">
+          <a href='https://www.w3schools.com/jquery/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+       </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="hero" id='thumbnail' src="IMG/JQUERTY.jfif">
+      </div>
+    </div>
+    <hr>
+  </section>
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero"  id='thumbnail' src="IMG/JAVA.jfif">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" id="header">Java-A programming language
+          <br class="hidden lg:inline-block">
+        </h1>
+        <p class="mb-8 leading-relaxed"id="paragraph">Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let application developers write once, run anywhere </p>
+        <div class="flex justify-center">
+          <a href='https://www.w3schools.com/java/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+          </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" id="header">C++-A Programming language
+          <br class="hidden lg:inline-block">
+        </h1>
+        <p class="mb-8 leading-relaxed"id="paragraph">C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes". The language has expanded significantly over time, and modern C++ now has object-oriented, generic, and functional features in addition to facilities for low-level memory manipulation.</p>
+        <div class="flex justify-center">
+          <a href='https://www.w3schools.com/cpp/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+       </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="hero" id='thumbnail' src="IMG/C.png">
+      </div>
+    </div>
+    <hr>
+  </section>
+  <hr>
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero"  id='thumbnail' src="IMG/BOOTS.jfif">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" id="header">Bootstrap-A programming language
+          <br class="hidden lg:inline-block">
+        </h1>
+        <p class="mb-8 leading-relaxed"id="paragraph">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
+        <div class="flex justify-center">
+          <a href='https://www.w3schools.com/bootstrap/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+          </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" id="header">Artificial Intelligence (AI)
+          <br class="hidden lg:inline-block">
+        </h1>
+        <p class="mb-8 leading-relaxed"id="paragraph"> Artificial intelligence is intelligence demonstrated by machines, unlike the natural intelligence displayed by humans and animals, which involves consciousness and emotionality. The distinction between the former and the latter categories is often revealed by the acronym chosen.</p>
+        <div class="flex justify-center">
+          <a href='https://www.w3schools.com/ai/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+       </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="hero" id='thumbnail' src="IMG/AI.jfif">
+      </div>
+    </div>
+    <hr>
+  </section>
+  <hr>
+  <div class="column">
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col">
+        <div class="h-1 bg-gray-200 rounded overflow-hidden">
+          
+        </div>
+        <div class="container px-5 py-24 mx-auto">
+          <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center" id='header'>Tutorials</h1>
+          <div class="flex flex-wrap -m-4">
+          
+         
+      
+      </div>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="IMG/1.jfif">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Machine Learning
+          </h2>
+          <p class="text-base leading-relaxed mt-2">In this tutorial we will go back to mathematics and study statistics, and how to calculate important numbers based on data sets.
+
+            We will also learn how to use various Python modules to get the answers we need.
+            
+            And we will learn how to make functions that are able to predict the outcome based on what we have learned.
+            
+            </p>
+          <br>
+          <a href='https://www.w3schools.com/python/python_ml_getting_started.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+            
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="IMG/2.jfif">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">React Tutorial</h2>
+          <p class="text-base leading-relaxed mt-2">React is a JavaScript library created by Facebook.
+
+            React is a tool for building UI components.
+            
+            Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM. It creates a VIRTUAL DOM in memory.</p>
+          <br>
+          <a href='https://www.w3schools.com/react/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+            
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="IMG/3.jfif">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Data Science Tutorial</h2>
+          <p class="text-base leading-relaxed mt-2">Data Science is about data gathering, analysis and decision-making.
+
+            Data Science is about finding patterns in data, through analysis, and make future predictions.
+            
+            By using Data Science, companies are able to make Better decisions,Predictive analysis (what will happen next?)
+            Pattern discoveries.</p>
+          <br>
+          <a href='https://www.w3schools.com/datascience/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+            
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="IMG/4.jfif">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">NumPy Tutorial</h2>
+          <p class="text-base leading-relaxed mt-2">NumPy is a Python library used for working with arrays.
+
+            It also has functions for working in domain of linear algebra, fourier transform, and matrices.
+            
+            NumPy was created in 2005 by Travis Oliphant. It is an open source project and you can use it freely.
+            
+            NumPy stands for Numerical Python.</p>
+          <br>
+          <a href='https://www.w3schools.com/python/numpy/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+            
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="IMG/5.jfif">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Pandas Introduction</h2>
+          <p class="text-base leading-relaxed mt-2">Pandas is a Python library used for working with data sets.
+
+            It has functions for analyzing, cleaning, exploring, and manipulating data.
+            
+            The name "Pandas" has a reference to both "Panel Data", and "Python Data Analysis" and was created by Wes McKinney in 2008.</p>
+          <br>
+          <a href='https://www.w3schools.com/python/pandas/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+            
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="IMG/6.jfif">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">SciPy Tutorial</h2>
+          <p class="text-base leading-relaxed mt-2">SciPy is a scientific computation library that uses NumPy underneath.
+
+            SciPy stands for Scientific Python.
+            
+            It provides more utility functions for optimization, stats and signal processing.
+            
+            Like NumPy, SciPy is open source so we can use it freely.</p>
+          <br>
+          <a href='https://www.w3schools.com/python/scipy/index.php' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+            
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="IMG/7.jfif">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">C# Tutorial</h2>
+          <p class="text-base leading-relaxed mt-2">C# is an object-oriented programming language created by Microsoft that runs on the .NET Framework.
+            
+            C# has roots from the C family, and the language is close to other popular languages like C++ and Java.</p>
+          <br>
+          <a href='https://www.w3schools.com/cs/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+            
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="IMG/8.jfif">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">R Tutorial</h2>
+          <p class="text-base leading-relaxed mt-2">R is a popular programming language used for statistical computing and graphical presentation. It is a great resource for data analysis, data visualization, data science and machine learning</p>
+          <br>
+          <a href='https://www.w3schools.com/r/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+            
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="IMG/9.jfif">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">ASP and ASP.NET Tutorials</h2>
+          <p class="text-base leading-relaxed mt-2">ASP is an old (but still powerful) tool for making dynamic Web pages.
+
+            It is a technology (much like PHP) for executing scripts on a web server.
+            
+            In this tutorial you will learn all you need to know about ASP.</p>
+          <br>
+          <a href='https://www.w3schools.com/asp/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+            
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="IMG/10.jfif">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Node.js Tutorial</h2>
+          <p class="text-base leading-relaxed mt-2">Node.js is an open source server environment.
+            It runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.).
+            It uses JavaScript on the server. Node.js eliminates the waiting, and simply continues with the next request.</p>
+          <br>
+          <a href='https://www.w3schools.com/nodejs/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+            
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="IMG/11.jfif">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Raspberry Pi Tutorial</h2>
+          <p class="text-base leading-relaxed mt-2">The Raspberry Pi is a small, affordable, and amazingly capable, credit card size computer.
+
+            It is developed by the Raspberry Pi Foundation, and it might be the most versatile tech ever created.</p>
+          <br>
+          <a href='https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+            
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="IMG/12.jfif">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Git Tutorial</h2>
+          <p class="text-base leading-relaxed mt-2">Git is a popular version control system. It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then. It is used for:
+
+            Tracking code changes,
+            Tracking who made changes,
+            Coding collaboration.</p>
+          <br>
+          <a href='https://www.w3schools.com/git/default.asp' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started ➔</a>
+        </div>
+      </div>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center" id='header'>Our Inspiration</h1>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/2 w-full">
+          <div class="h-full bg-gray-100 p-8 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p class="leading-relaxed mb-6" id='paragraph'>Before you were born, your parents weren’t as boring as they are now. They got that way from paying your bills, cleaning your clothes, and listening to you talk about how cool you thought you were. So before you save the rain forest from the parasites of your parent’s generation, try delousing the closet in your own room.</p>
+            <a class="inline-flex items-center">
+              <img alt="testimonial" src="IMG/Bill gates.jfif" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-gray-900" id='header'>Bill Gates</span>
+                <span class="text-gray-500 text-sm">Founder-Microsoft</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/2 w-full">
+          <div class="h-full bg-gray-100 p-8 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p class="leading-relaxed mb-6" id='paragraph'>If you go back a few hundred years, what we take for granted today would seem like magic—being able to talk to people over long distances, to transmit images, flying, accessing vast amounts of data like an oracle. These are all things that would have been considered magic a few hundred years ago.</p>
+            <a class="inline-flex items-center">
+              <img alt="testimonial" src="IMG/Elon musk.jfif" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-gray-900" id='header'>Elon Musk</span>
+                <span class="text-gray-500 text-sm">Founder-Tesla Motars</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <hr>
+<section class='Contact'  >
+  <section class="text-gray-600 body-font relative">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" id='style'>Contact Us</h1>
+        </div>
+      <div class="lg:w-1/2 md:w-2/3 mx-auto">
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="name" class="leading-7 text-sm text-gray-600" id='style'>First Name</label>
+              <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="email" class="leading-7 text-sm text-gray-600" id='style'>Last Name</label>
+              <input type="email" id="email" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="email" class="leading-7 text-sm text-gray-600" id='style'>Phone No.</label>
+              <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="email" class="leading-7 text-sm text-gray-600" id='style'>Email</label>
+              <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <div class="relative">
+              <label for="message" class="leading-7 text-sm text-gray-600" id='style'>Message</label>
+              <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <a href="thanks.html">
+            <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" id='enrollnow1'>Send Feedback</button>
+            </a>
+          </div>
+          <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+              <a href="https://www.facebook.com/" class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a href="https://twitter.com/?lang=en" class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a  href="https://instagram.com/abhinavsrivastwaofficial" class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a href='https://in.linkedin.com/' class="ml-3 text-gray-500">
+                <svg  fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+</section>
+</section>
+
+
+
+<section id="footer">
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a href="index.html" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+       
+        <img src ='IMG\logo.jpg' id="logo" alt='Logo'>
+        <span id="statusbar" class="ml-3 text-xl">Coading Platform</span>
+      </a>
+      <a id="status1"  href="index.html" class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">Copyright © coadingplatform All Rights Reserved  </a>
+       
+      
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a href="https://www.facebook.com/" class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a href="https://twitter.com/?lang=en" class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a  href="https://instagram.com/abhinavsrivastwaofficial" class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a href='https://in.linkedin.com/' class="ml-3 text-gray-500">
+          <svg  fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+</section>
+</div>
+
+
+
+</body>
+</html>
